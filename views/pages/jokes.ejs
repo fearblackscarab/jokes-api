@@ -1,0 +1,18 @@
+<%- include('../partials/header') %>
+
+<main class="main main-joke container" id="main">
+    <h2><%= name %></h2>
+    <section class="section section-jokes container">
+        <div class="row">
+            <% data.forEach(item=>{ %>
+                <div class="joke-div col-md-3">
+                    <h3 class="setup"><a href="/jokes/<%= item.id %>"><%= item.setup %></a></h3>
+                    <p class="punchline"><%= item.punchline %></p>
+                    <p class="type"><a href="/jokes/type/<%= item.type %>"><%= item.type %></a></p>
+                </div>
+                <% }) %> 
+            </div>
+    </section>
+</main>
+
+<%- include('../partials/footer') %> 

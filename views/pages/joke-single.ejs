@@ -1,0 +1,12 @@
+<%- include('../partials/header') %>
+
+<main class="main main-single container" id="main">
+    <h2 class="single-h2"><%= data.setup %> </h2>
+    <p class="punchline"><%= data.punchline %> </p>
+    <% if(data.id > 1){ %>
+        <a href="/jokes/<%= data.id-1 %>">Prev</a>
+    <% } %>
+    <p class="next"><a href="/jokes/<%= data.id+1 %>">next</a></p>
+</main>
+
+<%- include('../partials/footer') %> 

@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+a{
+    color: red;
+    text-decoration: none;
+}
+
+.main-single{
+    background-color: black;
+    color:white
+}
